@@ -1,0 +1,71 @@
+#info {
+    background: #333;
+    opacity: 0.8;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    width: 280px;
+    color: #fff;
+    border-radius: 5px;
+    z-index: 10;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  }
+  
+  #info p {
+    padding: 0 10px;
+  }
+  
+  #info a {
+    color: #f2ea0a;
+  }
+  
+  /* Basic styles for black background and crosshair cursor */
+  body {
+    background: #000;
+    margin: 0;
+  }
+  
+  canvas {
+    cursor: crosshair;
+    display: block;
+  }
+  
+  #newYearMessage {
+    position: fixed;
+    top: 80px;
+    width: 100%;
+    text-align: center;
+    font-size: 48px;
+    color: white;
+    opacity: 0;
+    transition: opacity 2s;
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    text-shadow: 2px 2px 4px #000000;
+    animation: glow 1s infinite alternate;
+    pointer-events: none;
+  }
+  
+  /* Glow effect */
+  @keyframes glow {
+    from {
+      text-shadow: 0 0 5px #ff007b, 0 0 10px #ff007b;
+    }
+    to {
+      text-shadow: 0 0 20px #ff007b, 0 0 25px #ff007b;
+    }
+  }
+  
+  .hidden {
+    display: none;
+  }
+  
+  .fade-in {
+    opacity: 1;
+    transition: opacity 2s;
+  }
+  
+  .fade-out {
+    opacity: 0;
+    transition: opacity 2s;
+  }
+  
